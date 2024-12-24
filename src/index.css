@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Bold';
+  src:
+    local('Montserrat-Bold'),
+    url('./assets/fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ExtraLight';
+  src:
+    local('Montserrat-ExtraLight'),
+    url('./assets/fonts/Montserrat/Montserrat-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Light';
+  src:
+    local('Montserrat-Light'),
+    url('./assets/fonts/Montserrat/Montserrat-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Medium';
+  src:
+    local('Montserrat-Medium'),
+    url('./assets/fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Regular';
+  src:
+    local('Montserrat-Regular'),
+    url('./assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SemiBold';
+  src:
+    local('Montserrat-SemiBold'),
+    url('./assets/fonts/Montserrat/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Thin';
+  src:
+    local('Montserrat-Thin'),
+    url('./assets/fonts/Montserrat/Montserrat-Thin.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay-Black';
+  src: url('./assets/fonts/PlayfairDisplay/PlayfairDisplay-Black.ttf') format('truetype');
+}
+
+html {
+  height: 100%;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+.input-footer .ant-input::placeholder {
+  color: white;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.input-hero .ant-input::placeholder {
+  color: #545454;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.footerParagraph {
+  font-size: 14px;
+  line-height: 19px;
+  color: white;
+}
+.sectionTitle {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 50px;
+  color: black;
+  letter-spacing: 0.6px;
+  font-family: 'PlayfairDisplay-Black' !important;
+}
+
+.heroTitle {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 50px;
+  color: white;
+  letter-spacing: 0.6px;
+  font-family: 'PlayfairDisplay-Black' !important;
+}
+
+.slide-arror::after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  filter: blur(10px);
+  opacity: .7;
+  z-index: -1;
+}
+
+.commonParagraph {
+  font-size: 14px;
+  line-height: 19.6px;
+  color: #757575;
+  font-weight: 400;
+}
+
+.witch {
+  animation: moveAndFlip 3s infinite ease-in-out;
+}
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  background-image: url(../public/images/hero.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 300%;
+  height: 200%;
+  bottom: 0;
+  left: -100%;
+  right: -100%;
+  border-radius: 50%;
+  z-index: 10;
+  padding-bottom: 80px;
+}
+
+@keyframes moveAndFlip {
+  0%, 100% {
+    transform: translateY(0) scaleX(1);
+  }
+  50% {
+    transform: translateY(50px) scaleX(-1);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .sectionTitle {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .heroTitle {
+    font-size: 80px;
+    line-height: 120px;
+  }
+
+  .hero-section::before {
+    width: 200%;
+    height: 200%;
+    left: -50%;
+    right: -50%;
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "header": {
+    "about us": "ABOUT US",
+    "contact us": "CONTACT US",
+    "games": "GAMES",
+    "partners": "PARTNERS",
+    "vietnamese": "Vietnamese",
+    "english": "English"
+  },
+
+  "footer": {
+    "address": "Address",
+    "address vietnam": "20 Phan Dang Luu street, Hai Chau District, Danang city, Vietnam",
+    "address us": "Valletta Buildings, South Street, Valletta - VLT 1103 Malta, US",
+    "subscribe": "Subscribe",
+    "content subscribe": "Subscribe to our newsletter and be the first to know about our updates"
+  },
+
+  "or": "or",
+  "users": "Users",
+  "games": "Games",
+  "your email": "Enter your email",
+  "days": "Days",
+  "hours": "Hours",
+  "minutes": "Minutes",
+  "second": "Second"
+}

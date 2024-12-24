@@ -1,0 +1,27 @@
+{
+  "header": {
+    "about us": "VỀ CHÚNG TÔI",
+    "contact us": "LIÊN HỆ",
+    "games": "TRÒ CHƠI",
+    "partners": "ĐỐI TÁC",
+    "vietnamese": "Tiếng việt",
+    "english": "Tiếng Anh"
+  },
+
+  "footer": {
+    "address": "Địa chỉ",
+    "address vietnam": "Số 20 đường Phan Đăng Lưu, quận Hải Châu, thành phố Đà Nẵng, Việt Nam",
+    "address us": "Valletta Buildings, South Street, Valletta - VLT 1103 Malta, Mỹ",
+    "subscribe": "Theo dõi",
+    "content subscribe": "Đăng ký nhận bản tin của chúng tôi và là người đầu tiên biết về các cập nhật của chúng tôi"
+  },
+
+  "or": "hoặc",
+  "users": "Người chơi",
+  "games": "Trò chơi",
+  "your email": "Địa chỉ email của bạn",
+  "days": "Ngày",
+  "hours": "Giờ",
+  "minutes": "Phút",
+  "seconds": "Giây"
+}
