@@ -54,7 +54,7 @@ export default function Popover({
                 left: x ?? 0
               }}
               ref={refs.setFloating}
-              className='Tooltip relative z-50 cursor-pointer rounded-sm border bg-white shadow-sm'
+              className='Tooltip relative z-50 cursor-pointer bg-white rounded-[8px] border shadow-sm'
               initial={{ opacity: 0, transform: 'scale(0)' }}
               animate={{ opacity: 1, transform: 'scale(1)' }}
               exit={{ opacity: 0, transform: 'scale(0)' }}

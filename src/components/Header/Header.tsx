@@ -56,7 +56,7 @@ function Header() {
 
           <Popover
             renderPopover={
-              <div className='flex w-[160px] flex-col rounded-[8px] bg-white p-2'>
+              <div className='flex w-[160px] flex-col p-2'>
                 <div onClick={() => changeLanguage('vi')} className='flex items-center gap-2'>
                   <div className='w-[24px]'>
                     {keyLanguage === 'vi' && (
