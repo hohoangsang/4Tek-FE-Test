@@ -12,24 +12,32 @@ function Hero() {
         </h2>
 
         <div className='my-10 flex justify-between rounded-[21px] bg-white px-[26px] py-6 laptop:mx-[50px] laptop:px-10'>
-          <div>
+          <div className='flex flex-col items-center'>
             <span className='sectionTitle'>30</span>
-            <p className='mt-2 text-center font-primaryBold'>{t('days', { ns: 'common' })}</p>
+            <p className='text-[12px] mt-2 text-center font-primaryBold tablet:text-[16px]'>
+              {t('days', { ns: 'common' })}
+            </p>
           </div>
           <div className='sectionTitle'>:</div>
-          <div>
+          <div className='flex flex-col items-center'>
             <span className='sectionTitle'>18</span>
-            <p className='mt-2 text-center font-primaryBold'>{t('hours', { ns: 'common' })}</p>
+            <p className='text-[12px] mt-2 text-center font-primaryBold tablet:text-[16px]'>
+              {t('hours', { ns: 'common' })}
+            </p>
           </div>
           <div className='sectionTitle'>:</div>
-          <div>
+          <div className='flex flex-col items-center'>
             <span className='sectionTitle'>20</span>
-            <p className='mt-2 text-center font-primaryBold'>{t('minutes', { ns: 'common' })}</p>
+            <p className='text-[12px] mt-2 text-center font-primaryBold tablet:text-[16px]'>
+              {t('minutes', { ns: 'common' })}
+            </p>
           </div>
           <div className='sectionTitle'>:</div>
-          <div>
+          <div className='flex flex-col items-center'>
             <span className='sectionTitle'>11</span>
-            <p className='mt-2 text-center font-primaryBold'>{t('seconds', { ns: 'common' })}</p>
+            <p className='text-[12px] mt-2 text-center font-primaryBold tablet:text-[16px]'>
+              {t('seconds', { ns: 'common' })}
+            </p>
           </div>
         </div>
 
