@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Slider, { Settings } from 'react-slick';
 import Arrow from '~/components/Common/Arrow';

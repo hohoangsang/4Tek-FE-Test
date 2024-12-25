@@ -1,6 +1,5 @@
-import React from 'react';
-import GameList from './GameList';
 import { useTranslation } from 'react-i18next';
+import GameList from './GameList';
 
 function Games() {
   const { t } = useTranslation(['home']);

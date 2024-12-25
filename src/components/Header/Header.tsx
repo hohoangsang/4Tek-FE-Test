@@ -1,7 +1,7 @@
-import React, { Dispatch, SetStateAction } from 'react';
-import Popover from '../Popover/Popover';
+import { Dispatch, SetStateAction } from 'react';
 import { useTranslation } from 'react-i18next';
 import { locales } from '~/i18n/i18n';
+import Popover from '../Popover/Popover';
 
 type KeyLang = keyof typeof locales;
 
@@ -28,11 +28,11 @@ export const menus = [
   }
 ];
 
-interface HeaderProps{
-  setIsClickMenuMobile: Dispatch<SetStateAction<boolean>>
+interface HeaderProps {
+  setIsClickMenuMobile: Dispatch<SetStateAction<boolean>>;
 }
 
-function Header({setIsClickMenuMobile}: HeaderProps) {
+function Header({ setIsClickMenuMobile }: HeaderProps) {
   const { i18n, t } = useTranslation(['common']);
   const keyLanguage = i18n.language as KeyLang;
 
@@ -123,7 +123,7 @@ function Header({setIsClickMenuMobile}: HeaderProps) {
           </Popover>
         </div>
 
-        <div className='laptop:hidden cursor-pointer' onClick={() => setIsClickMenuMobile(true)}>
+        <div className='cursor-pointer laptop:hidden' onClick={() => setIsClickMenuMobile(true)}>
           <img srcSet='/images/menu.png 2x' alt='menu icon' />
         </div>
       </div>

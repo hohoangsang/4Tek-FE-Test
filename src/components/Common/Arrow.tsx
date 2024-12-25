@@ -1,16 +1,16 @@
-import React from 'react'
-
 type Props = {
-  wrapperClassName?: string
-  vectorImage: string
-}
+  wrapperClassName?: string;
+  vectorImage: string;
+};
 
-function Arrow({wrapperClassName, vectorImage}: Props) {
+function Arrow({ wrapperClassName, vectorImage }: Props) {
   return (
-    <div className={`w-[33.33px] h-[33.33px] cursor-pointer relative slide-arror ${wrapperClassName}`}>
-      <img srcSet={`${vectorImage} 2x`} alt="vector-left" className='w-full h-full' />
+    <div
+      className={`slide-arror relative h-[33.33px] w-[33.33px] cursor-pointer ${wrapperClassName}`}
+    >
+      <img srcSet={`${vectorImage} 2x`} alt='vector-left' className='h-full w-full' />
     </div>
-  )
+  );
 }
 
-export default Arrow
+export default Arrow;

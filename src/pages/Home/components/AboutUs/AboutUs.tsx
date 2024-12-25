@@ -1,18 +1,18 @@
-import React, { Fragment } from 'react';
-import Witch from './Witch';
+import { Fragment } from 'react';
 import { useTranslation } from 'react-i18next';
+import Witch from './Witch';
 
 const aboutData = [
   {
     id: 1,
-    key: "access 24/7",
+    key: 'access 24/7',
     title: '24 - Hour',
     content: "24/7 access ensures operators' businesses runs smoothly all year long.",
     icon: '/images/calendar-tick.png'
   },
   {
     id: 2,
-    key: "design",
+    key: 'design',
     title: 'Design',
     content:
       'Combining imaginative universes, play dynamics, and unprecedented gameplay, our games transcend the boundaries of the virtual world by weaving innovative gameplay.',
@@ -20,7 +20,7 @@ const aboutData = [
   },
   {
     id: 3,
-    key: "team",
+    key: 'team',
     title: 'Team',
     content:
       'Etech is an award-winning, international studio of designers, artists, animators and producers that create content for the biggest names in film and video games.',
@@ -56,7 +56,7 @@ function AboutUs() {
                     +
                   </span>
                 </div>
-                <p className='mt-1 text-[24px] leading-[30px]'>{t('users', {ns: "common"})}</p>
+                <p className='mt-1 text-[24px] leading-[30px]'>{t('users', { ns: 'common' })}</p>
               </div>
               <div className='font-primaryBold'>
                 <div className='text-[#079BEE]'>
@@ -67,7 +67,7 @@ function AboutUs() {
                     +
                   </span>
                 </div>
-                <p className='mt-1 text-[24px] leading-[30px]'>{t('games', {ns: "common"})}</p>
+                <p className='mt-1 text-[24px] leading-[30px]'>{t('games', { ns: 'common' })}</p>
               </div>
             </div>
           </div>
@@ -80,7 +80,9 @@ function AboutUs() {
                     <img src={data.icon} alt={data.title} className='h-full w-full' />
                   </div>
                   <div>
-                    <h3 className='font-primaryBold text-[24px] leading-[30px]'>{t(`${data.key}.title`)}</h3>
+                    <h3 className='font-primaryBold text-[24px] leading-[30px]'>
+                      {t(`${data.key}.title`)}
+                    </h3>
                     <p className='commonParagraph mt-3'>{t(`${data.key}.content`)}</p>
                   </div>
                 </div>
